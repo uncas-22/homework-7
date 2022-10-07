@@ -18,7 +18,9 @@ public class Main {
         }
         System.out.println("Урок 7. Задание 2.5");
         for (int s = 1904; s <= 2096; s = s + 4) {
-            System.out.println(s + " - год является високосным");
+            if (s % 4 == 0 && s % 100 != 0 || s % 400 == 0) {
+                System.out.println(s + " - год является високосным");
+            }
         }
         System.out.println("Урок 7. Задание 2.6"); // вывести в консоль последовательность цифр (+7)
         for (int u = 7; u <= 98; u = u + 7) {
@@ -36,10 +38,11 @@ public class Main {
             System.out.println("Месяц " + v + " cумма накоплений равна " + bankTotal);
         }
         System.out.println("Урок 7. Задание 3.9 банковский вклад 12% годовых"); // банковский вклад под 12% годовых
-        int bankTotalTask = 0; // вклад в банке
+        double bankTotalTask = 0; // вклад в банке
         int monthSumTask = 29_000; // ежемесячное пополнение
+        double percent = 0.01;
         for (int w = 1; w <=12; w ++) {
-            bankTotalTask = bankTotalTask + bankTotalTask / 100;
+            bankTotalTask = bankTotalTask * (1 + percent);
             bankTotalTask = bankTotalTask + monthSumTask;
             System.out.println("Месяц " + w + " cумма накоплений равна " + bankTotalTask);
         }
