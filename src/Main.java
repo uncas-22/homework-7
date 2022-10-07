@@ -35,7 +35,7 @@ public class Main {
             bankTotal = bankTotal + monthSum;
             System.out.println("Месяц " + v + " cумма накоплений равна " + bankTotal);
         }
-        System.out.println("Урок 7. Задание 3.9 банковский вклад под 12% годовых"); // банковский вклад под 12% годовых
+        System.out.println("Урок 7. Задание 3.9 банковский вклад 12% годовых"); // банковский вклад под 12% годовых
         int bankTotalTask = 0; // вклад в банке
         int monthSumTask = 29_000; // ежемесячное пополнение
         for (int w = 1; w <=12; w ++) {
